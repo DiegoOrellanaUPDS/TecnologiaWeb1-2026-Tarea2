@@ -11,7 +11,8 @@ public class ProductoYasminController : ControllerBase
 {
     private readonly Tarea_2Context _context;
 
-// CONTROL DE VERSIONES: cambio realizado por feature3-Yasmin.
+    // CONTROL DE VERSIONEcomentario base para feature2 y feature3.
+
     public ProductoYasminController(Tarea_2Context context)
     {
         _context = context;
