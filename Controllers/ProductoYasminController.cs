@@ -11,12 +11,12 @@ public class ProductoYasminController : ControllerBase
 {
     private readonly Tarea_2Context _context;
 
-// CONTROL DE VERSIONES cambio realizado por feature2-Yasmin.
+    // CONTROL DE VERSIONES: integración de feature2-Yasmin y feature3-Yasmin.
+
     public ProductoYasminController(Tarea_2Context context)
     {
         _context = context;
     }
-
     [HttpPost]
     public async Task<ActionResult<ProductoYasmin>> Crear(
         [FromBody] ProductoYasminRequest datos)
