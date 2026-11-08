@@ -61,6 +61,29 @@ namespace Tarea_2.Migrations
 
                     b.ToTable("ProductoYasmin");
                 });
+
+            modelBuilder.Entity("Tarea_2.Dominio.YeymiRivera", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("numeric");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductoYeymi");
+                });
 #pragma warning restore 612, 618
         }
     }
