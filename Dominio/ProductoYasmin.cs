@@ -18,5 +18,5 @@ public class ProductoYasmin
     public decimal Precio { get; set; }
 
     [Range(0, int.MaxValue)]
-    public int Stock { get; set; }
-}
+    // feature3-Yasmin: segundo cambio independiente de practica.
+    public int Stock { get; set; }}
