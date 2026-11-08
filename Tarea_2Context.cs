@@ -6,5 +6,4 @@ public class Tarea_2Context(DbContextOptions<Tarea_2Context> options) : DbContex
     public DbSet<Tarea_2.Dominio.Persona> Persona { get; set; } = default!;
         public DbSet<Tarea_2.Dominio.ProductoYasmin> ProductoYasmin
         { get; set; } = default!;
-        public DbSet<YeymiRivera> ProductoYeymi {get;set;}=default!;
 }
