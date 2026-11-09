@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
+using Tarea_2;
 
 #nullable disable
 
@@ -83,6 +84,26 @@ namespace Tarea_2.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ProductoCarlosviza");
+                });
+
+            modelBuilder.Entity("Tarea_2.Dominio.ProductoJhefersonVelasco", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("numeric");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductoJhefersonVelasco");
                 });
 
             modelBuilder.Entity("Tarea_2.Dominio.ProductoYasmin", b =>
