@@ -1,10 +1,12 @@
-using  System.ComponentModel.DataAnnotations;
-using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+
 namespace Tarea_2.Dominio;
-public class YeymiRivera{
+
+public class YeymiRivera
+{
     [Key]
-    public int Id{set;get;}
-    public string Nombre {get;set;}
-    public decimal Precio {get;set;}
-    public int Stock {get;set;}
+    public int Id { get; set; }
+    public required string Nombre { get; set; }
+    public decimal Precio { get; set; }
+    public int Stock { get; set; }
 }
