@@ -6,7 +6,7 @@ namespace Tarea_2.Controllers;
 [Route("api/productos-juliethflores")]
 public class ProductosJuliethFloresController : ControllerBase
 {
-    // Comentario Gitflow: cambio realizado desde feature3
+    // Comentario Gitflow: version base
 
 //segundo cambio independiente de feature3
     private readonly Tarea_2Context _context;
