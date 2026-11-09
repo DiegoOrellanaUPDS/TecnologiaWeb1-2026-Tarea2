@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Tarea_2.Dominio;
+using Tarea_2; 
 
 [Route("api/[controller]")]
 [ApiController]

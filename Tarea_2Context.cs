@@ -1,15 +1,21 @@
 using Microsoft.EntityFrameworkCore;
 using Tarea_2.Dominio;
 
-public class Tarea_2Context(DbContextOptions<Tarea_2Context> options) : DbContext(options)
-{
-    public DbSet<Tarea_2.Dominio.Persona> Persona { get; set; } = default!;
-        public DbSet<Tarea_2.Dominio.ProductoYasmin> ProductoYasmin
-        { get; set; } = default!;
-    public DbSet<Tarea_2.Dominio.ProductoCarlosMiranda> ProductoCarlosMiranda { get; set; } = default!;
-    public DbSet<Tarea_2.Dominio.ProductoCarlosviza> ProductoCarlosviza { get; set; } = default!;
+namespace Tarea_2;
 
-    public DbSet<Tarea_2.Dominio.YeymiRivera> ProductoYeymi { get; set; } = default!;
+public class Tarea_2Context : DbContext
+{
+    public Tarea_2Context(DbContextOptions<Tarea_2Context> options)
+        : base(options)
+    {
+    }
+
+    public DbSet<Persona> Persona { get; set; } = default!;
+    public DbSet<ProductoYasmin> ProductoYasmin { get; set; } = default!;
+    public DbSet<ProductoCarlosMiranda> ProductoCarlosMiranda { get; set; } = default!;
+    public DbSet<ProductoCarlosviza> ProductoCarlosviza { get; set; } = default!;
+    public DbSet<YeymiRivera> ProductoYeymi { get; set; } = default!;
+    public DbSet<ProductoJhefersonVelasco> ProductoJhefersonVelasco { get; set; } = default!;
 
     public DbSet<Tarea_2.Models.ProductoEmanuelKilibarda> ProductoEmanuelKilibarda { get; set; } = default!;
 }
