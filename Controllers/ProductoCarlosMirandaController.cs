@@ -6,6 +6,8 @@ namespace Tarea_2.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+
+    //Práctica feature2: modificación de Carlos Miranda
     public class ProductoCarlosMirandaController : ControllerBase
     {
         private readonly Tarea_2Context _context;
