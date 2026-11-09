@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Tarea_2.Dominio;
-
+//nose1
 namespace Tarea_2.Controllers;
 //nskjdnfjksndfn
 [ApiController]
