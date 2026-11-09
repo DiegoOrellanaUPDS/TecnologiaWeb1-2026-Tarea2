@@ -10,7 +10,7 @@ namespace Tarea_2.Controllers
     // Segundo comentario - feature3 commit 2
     [Route("api/[controller]")]
     [ApiController]
-    public class PersonaLeonardoZentenController : ControllerBase
+    public class PersonaLeonardoZentenController :  ControllerBase
     {
         private readonly Tarea_2Context _context;
         public PersonaLeonardoZentenController(Tarea_2Context context)
