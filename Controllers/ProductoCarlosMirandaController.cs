@@ -17,6 +17,7 @@ namespace Tarea_2.Controllers
             _context = context;
         }
 
+        //Obtiene la lista completa de productos registrados.
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductoCarlosMiranda>>> GetProductos()
         {
