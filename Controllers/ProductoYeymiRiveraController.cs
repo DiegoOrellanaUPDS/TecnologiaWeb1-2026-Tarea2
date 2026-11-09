@@ -14,7 +14,6 @@ public class ProductoYeymiRiveraController : ControllerBase
     {
         _context = context;
     }
-    //Post de ProductoYeymi
     [HttpPost]
     public async Task<ActionResult> Crear(
         string nombre, int stock, decimal precio
