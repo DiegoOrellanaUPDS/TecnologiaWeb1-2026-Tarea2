@@ -5,6 +5,7 @@ namespace Tarea_2;
 
 public class Tarea_2Context : DbContext
 {
+<<<<<<< HEAD
     public Tarea_2Context(DbContextOptions<Tarea_2Context> options)
         : base(options)
     {
@@ -16,4 +17,10 @@ public class Tarea_2Context : DbContext
     public DbSet<ProductoCarlosviza> ProductoCarlosviza { get; set; } = default!;
     public DbSet<YeymiRivera> ProductoYeymi { get; set; } = default!;
     public DbSet<ProductoJhefersonVelasco> ProductoJhefersonVelasco { get; set; } = default!;
+    public DbSet<Tarea_2.Dominio.ProductoLeonardoZenteno> ProductoLeonardoZentenos {get; set;}= default!;
 }
+=======
+    
+    
+
+>>>>>>> feature1-LeonardoZenteno
