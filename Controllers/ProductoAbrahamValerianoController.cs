@@ -75,7 +75,7 @@ public class ProductoAbrahamValerianoController : ControllerBase
         return NoContent();
     }
 
-    // DELETE: Eliminar producto
+    // DELETE: Eliminar producto - segunda prueba de feature3
     [HttpDelete("{id}")]
     public async Task<IActionResult> EliminarProducto(int id)
     {
