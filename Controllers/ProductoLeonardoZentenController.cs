@@ -13,9 +13,9 @@ namespace Tarea_2.Controllers
     public class PersonaLeonardoZentenController :  ControllerBase
     {
         private readonly Tarea_2Context _context;
-        public PersonaLeonardoZentenController(Tarea_2Context context)
+        public PersonaLeonardoZentenController(Tarea_2Context contexto)
         {
-            _context = context;
+            _context = contexto;
         }
 
         [HttpGet]
