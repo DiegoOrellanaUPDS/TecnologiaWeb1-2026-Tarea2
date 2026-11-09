@@ -22,5 +22,6 @@ public class Tarea_2Context : DbContext
 
     public DbSet<ProductoJhefersonVelasco> ProductoJhefersonVelasco { get; set; } = default!;
 
+    public DbSet<ProductoAdalidCallizaya> ProductosAdalidCallizaya { get; set; } = default!;
     public DbSet<ProductoJuliethFlores> ProductosJuliethFlores { get; set; } = default!;
 }
