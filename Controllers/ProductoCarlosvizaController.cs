@@ -56,7 +56,7 @@ namespace Tarea_2.Controllers
             await _db.SaveChangesAsync();
             return NoContent();
         }
-
+        //eliminar-feature3
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Eliminar(int id)
         {
