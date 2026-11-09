@@ -6,7 +6,7 @@ namespace Tarea_2.Controllers;
 [Route("api/productos-juliethflores")]
 public class ProductosJuliethFloresController : ControllerBase
 {
-    // Comentario de practica para revert  no-commit
+    // Comentario Gitflow: version base
 
     private readonly Tarea_2Context _context;
 
