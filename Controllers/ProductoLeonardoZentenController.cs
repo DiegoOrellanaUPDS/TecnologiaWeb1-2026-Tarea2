@@ -6,14 +6,12 @@ using Tarea_2.Dominio;
 namespace Tarea_2.Controllers
 {
     // Un cambio de este comentario - feature3
-
-    // Segundo comentario - feature3 commit 2
     [Route("api/[controller]")]
     [ApiController]
-    public class PersonaLeonardoZentenController :  ControllerBase
+    public class ProductoLeonardoZentenController : ControllerBase
     {
         private readonly Tarea_2Context _context;
-        public PersonaLeonardoZentenController(Tarea_2Context contexto)
+        public ProductoLeonardoZentenController(Tarea_2Context contexto)
         {
             _context = contexto;
         }
