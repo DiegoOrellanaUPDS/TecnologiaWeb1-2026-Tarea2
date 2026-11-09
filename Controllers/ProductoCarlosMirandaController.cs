@@ -6,8 +6,6 @@ namespace Tarea_2.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-
-    // Cambio adicional para practicar revert --no-commit.
     public class ProductoCarlosMirandaController : ControllerBase
     {
         private readonly Tarea_2Context _context;
