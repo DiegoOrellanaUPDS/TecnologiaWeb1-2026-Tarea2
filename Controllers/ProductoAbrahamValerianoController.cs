@@ -15,7 +15,7 @@ public class ProductoAbrahamValerianoController : ControllerBase
         _context = context;
     }
 
-    // GET: Listar todos los productos
+    // GET: Consulta de productos desde feature3 AbrahamValeriano
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ProductoAbrahamValeriano>>> GetProductos()
     {
