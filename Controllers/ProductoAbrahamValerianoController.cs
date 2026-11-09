@@ -15,7 +15,7 @@ public class ProductoAbrahamValerianoController : ControllerBase
         _context = context;
     }
 
-    // GET: Listado de productos desde feature2 AbrahamValeriano
+// GET: Listado y consulta de productos - integración de feature2 y feature3 AbrahamValeriano
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ProductoAbrahamValeriano>>> GetProductos()
     {
@@ -75,7 +75,7 @@ public class ProductoAbrahamValerianoController : ControllerBase
         return NoContent();
     }
 
-    // DELETE: Eliminar producto
+    // DELETE: Eliminar producto - segunda prueba de feature3
     [HttpDelete("{id}")]
     public async Task<IActionResult> EliminarProducto(int id)
     {
