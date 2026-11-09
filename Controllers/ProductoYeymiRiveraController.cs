@@ -4,8 +4,11 @@ using System.ComponentModel.DataAnnotations;
 using Tarea_2.Dominio;
 
 namespace Tarea_2.Controllers;
+<<<<<<< HEAD
 //Controldor de Yeymi
 //Comentario de feature 3
+=======
+>>>>>>> feature3-YeymiRivera
 
 [ApiController]
 [Route("api/ProductoYeymi")]
