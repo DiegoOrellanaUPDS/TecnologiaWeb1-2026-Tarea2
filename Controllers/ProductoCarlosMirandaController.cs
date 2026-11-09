@@ -7,6 +7,7 @@ namespace Tarea_2.Controllers
     [ApiController]
     [Route("api/[controller]")]
 
+    //Práctica feature3: modificación alternativa de Carlos Miranda
     //Práctica feature2: modificación de Carlos Miranda
     public class ProductoCarlosMirandaController : ControllerBase
     {
@@ -17,6 +18,7 @@ namespace Tarea_2.Controllers
             _context = context;
         }
 
+        //Obtiene la lista completa de productos registrados.
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductoCarlosMiranda>>> GetProductos()
         {
