@@ -30,4 +30,4 @@ public class ProductoJhefersonVelascoController : ControllerBase
     }
 }
 
-// Comentario de prueba para feature2
+// Comentario resuelto entre feature2 y feature3 por Jheferson
