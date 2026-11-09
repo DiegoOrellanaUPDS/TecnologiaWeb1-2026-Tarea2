@@ -1,4 +1,4 @@
-// Controlador CRUD de ProductoAdalidCallizaya - Cambio desde feature2
+// Controlador CRUD de ProductoAdalidCallizaya - Integracion de feature2 y feature3
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Tarea_2.Dominio;
@@ -17,6 +17,7 @@ namespace Tarea_2.Controllers
         }
 
         // GET: listar todos los productos
+        // Consulta de productos realizada desde feature3
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductoAdalidCallizaya>>> GetAll()
         {
