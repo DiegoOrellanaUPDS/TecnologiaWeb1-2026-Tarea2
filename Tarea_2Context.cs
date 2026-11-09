@@ -10,4 +10,6 @@ public class Tarea_2Context(DbContextOptions<Tarea_2Context> options) : DbContex
     public DbSet<Tarea_2.Dominio.ProductoCarlosviza> ProductoCarlosviza { get; set; } = default!;
 
     public DbSet<Tarea_2.Dominio.YeymiRivera> ProductoYeymi { get; set; } = default!;
+
+    public DbSet<Tarea_2.Models.ProductoEmanuelKilibarda> ProductoEmanuelKilibarda { get; set; } = default!;
 }
