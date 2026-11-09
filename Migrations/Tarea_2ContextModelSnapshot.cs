@@ -106,6 +106,29 @@ namespace Tarea_2.Migrations
                     b.ToTable("ProductoJhefersonVelasco");
                 });
 
+modelBuilder.Entity("Tarea_2.Dominio.ProductoJuliethFlores", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("numeric(12,2)");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductosJuliethFlores");
+                });
+
             modelBuilder.Entity("Tarea_2.Dominio.ProductoYasmin", b =>
                 {
                     b.Property<int>("Id")
