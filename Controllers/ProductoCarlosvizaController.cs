@@ -4,7 +4,6 @@ using Tarea_2.Dominio;
 
 namespace Tarea_2.Controllers
 {
-    //cambios ded prueba
     [ApiController]
     [Route("api/productoCarlosviza")]
     public class ProductoCarlosvizaController : ControllerBase
