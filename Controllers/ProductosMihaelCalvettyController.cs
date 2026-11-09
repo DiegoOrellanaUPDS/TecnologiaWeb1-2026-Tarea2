@@ -9,7 +9,6 @@ namespace Tarea_2.Controllers
     [ApiController]
     public class ProductosMihaelCalvettyController : ControllerBase
     {
-        //Modificacion de prueba en feature2-MihaelCalvetty
         private readonly Tarea_2Context _context;
 
         public ProductosMihaelCalvettyController(Tarea_2Context context)
