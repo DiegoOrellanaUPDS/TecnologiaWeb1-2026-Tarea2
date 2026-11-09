@@ -5,16 +5,6 @@ namespace Tarea_2;
 
 public class Tarea_2Context : DbContext
 {
-
-    public DbSet<Tarea_2.Dominio.Persona> Persona { get; set; } = default!;
-        public DbSet<Tarea_2.Dominio.ProductoYasmin> ProductoYasmin
-        { get; set; } = default!;
-    public DbSet<Tarea_2.Dominio.ProductoGersonCari> ProductosGersonCari{ get; set; } = default!;
-
-    
-    public DbSet<Tarea_2.Dominio.ProductoMihaelCalvetty> ProductoMihaelCalvetty { get; set; } = default!;
-}
-
     public Tarea_2Context(DbContextOptions<Tarea_2Context> options)
         : base(options)
     {
@@ -34,5 +24,7 @@ public class Tarea_2Context : DbContext
 
     public DbSet<ProductoAdalidCallizaya> ProductosAdalidCallizaya { get; set; } = default!;
     public DbSet<ProductoJuliethFlores> ProductosJuliethFlores { get; set; } = default!;
+    public DbSet<Tarea_2.Dominio.ProductoGersonCari> ProductosGersonCari{ get; set; } = default!;
+    public DbSet<Tarea_2.Dominio.ProductoMihaelCalvetty> ProductoMihaelCalvetty { get; set; } = default!;
 }
 
