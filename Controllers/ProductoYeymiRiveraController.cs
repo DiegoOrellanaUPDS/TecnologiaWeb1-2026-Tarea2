@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using Tarea_2.Dominio;
 
 namespace Tarea_2.Controllers;
-//Controldor de Yeymi
+
 [ApiController]
 [Route("api/ProductoYeymi")]
 public class ProductoYeymiRiveraController : ControllerBase
