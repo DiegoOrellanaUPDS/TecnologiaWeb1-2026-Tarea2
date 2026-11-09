@@ -17,6 +17,7 @@ namespace Tarea_2.Controllers
         }
 
         // GET: listar todos los productos
+        // Consulta de productos realizada desde feature3
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductoAdalidCallizaya>>> GetAll()
         {
