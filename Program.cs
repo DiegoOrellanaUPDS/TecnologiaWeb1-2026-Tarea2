@@ -1,10 +1,15 @@
 using Scalar.AspNetCore;
 using Microsoft.EntityFrameworkCore;
+using Tarea_2;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("Tarea_2Context") ?? throw new InvalidOperationException("Connection string 'Tarea_2Context' not found.");
 
-builder.Services.AddDbContext<Tarea_2Context>(options => options.UseNpgsql(connectionString));
+builder.Services.AddDbContext<Tarea_2Context>(options =>
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("Tarea_2Context")
+    )
+);
 
 // Add services to the container.
 
