@@ -8,7 +8,7 @@ namespace Tarea_2.Controllers
     // Implementar el CRUD completo para Producto - Creado por LeonardoZenteno
     [Route("api/[controller]")]
     [ApiController]
-    public class PersonaLeonardoZentenController : ControllerBase
+    public class PersonaLeonardoZentenController :  ControllerBase
     {
         private readonly Tarea_2Context _context;
         public PersonaLeonardoZentenController(Tarea_2Context context)
