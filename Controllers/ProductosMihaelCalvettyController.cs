@@ -16,7 +16,6 @@ namespace Tarea_2.Controllers
             _context = context;
         }
 
-        //Modificacion de prueba en feature1-MihaelCalvetty
 
         [HttpGet]
         public async Task<ActionResult<List<ProductoMihaelCalvetty>>> GetProductos()
