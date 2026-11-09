@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Tarea_2.Dominio;
-//sdafsdaf
+
 namespace Tarea_2.Controllers;
 //comenatrio
 [ApiController]
