@@ -29,3 +29,5 @@ public class ProductoJhefersonVelascoController : ControllerBase
         return CreatedAtAction(nameof(GetProductos), new { id = producto.Id }, producto);
     }
 }
+
+// Comentario conflictivo desde feature3 por Jheferson
