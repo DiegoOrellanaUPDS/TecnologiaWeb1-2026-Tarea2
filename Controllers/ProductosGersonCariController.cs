@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Tarea_2.Dominio;
 
 namespace Tarea_2.Controllers;
-
+// cambio de practica para revert no-commit
 [ApiController]
 [Route("api/[controller]")]
 public class ProductosGersonCariController : ControllerBase
