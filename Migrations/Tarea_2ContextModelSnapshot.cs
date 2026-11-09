@@ -37,6 +37,30 @@ namespace Tarea_2.Migrations
                     b.ToTable("Persona");
                 });
 
+            modelBuilder.Entity("Tarea_2.Dominio.ProductoAdalidCallizaya", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("character varying(150)");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("numeric(18,2)");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductosAdalidCallizaya");
+                });
+
             modelBuilder.Entity("Tarea_2.Dominio.ProductoCarlosviza", b =>
                 {
                     b.Property<int>("Id")
