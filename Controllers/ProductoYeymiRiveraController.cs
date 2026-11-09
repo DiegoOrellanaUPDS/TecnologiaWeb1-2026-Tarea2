@@ -30,7 +30,7 @@ public class ProductoYeymiRiveraController : ControllerBase
         _context.ProductoYeymi.Add(producto);
         await _context.SaveChangesAsync();
 
-        return Ok("Producto Creado Exitosamente"+new{ 
+        return Ok("Producto Creado "+new{ 
             Nombre=producto.Nombre,
             Precio=producto.Precio,
             Stock=producto.Stock
