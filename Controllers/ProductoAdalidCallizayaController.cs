@@ -18,7 +18,6 @@ namespace Tarea_2.Controllers
         }
 
         // GET: listar todos los productos
-        // Comentario de practica para revert no commit en feature1
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductoAdalidCallizaya>>> GetAll()
         {
