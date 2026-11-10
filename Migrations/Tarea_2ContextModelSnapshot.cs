@@ -38,6 +38,31 @@ namespace Tarea_2.Migrations
                     b.ToTable("Persona");
                 });
 
+            modelBuilder.Entity("Tarea_2.Dominio.ProductoAbrahamValeriano", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<decimal>("Precio")
+                        .HasPrecision(12, 2)
+                        .HasColumnType("numeric(12,2)");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductoAbrahamValeriano");
+                });
+
             modelBuilder.Entity("Tarea_2.Dominio.ProductoAdalidCallizaya", b =>
                 {
                     b.Property<int>("Id")
@@ -110,6 +135,29 @@ namespace Tarea_2.Migrations
                     b.ToTable("ProductoCarlosviza");
                 });
 
+            modelBuilder.Entity("Tarea_2.Dominio.ProductoGersonCari", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("numeric");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductosGersonCari");
+                });
+
             modelBuilder.Entity("Tarea_2.Dominio.ProductoJhefersonVelasco", b =>
                 {
                     b.Property<int>("Id")
@@ -125,12 +173,15 @@ namespace Tarea_2.Migrations
                     b.Property<decimal>("Precio")
                         .HasColumnType("numeric");
 
+                    b.Property<int>("Stock")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.ToTable("ProductoJhefersonVelasco");
                 });
 
-modelBuilder.Entity("Tarea_2.Dominio.ProductoJuliethFlores", b =>
+            modelBuilder.Entity("Tarea_2.Dominio.ProductoJuliethFlores", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -151,6 +202,29 @@ modelBuilder.Entity("Tarea_2.Dominio.ProductoJuliethFlores", b =>
                     b.HasKey("Id");
 
                     b.ToTable("ProductosJuliethFlores");
+                });
+
+            modelBuilder.Entity("Tarea_2.Dominio.ProductoMihaelCalvetty", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("numeric");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductoMihaelCalvetty");
                 });
 
             modelBuilder.Entity("Tarea_2.Dominio.ProductoYasmin", b =>
