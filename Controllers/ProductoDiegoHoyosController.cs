@@ -8,6 +8,9 @@ namespace Tarea_2.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 public class ProductoDiegoHoyosController : ControllerBase
+
+// Comentario de práctica para demostrar git revert --no-commit.
+
 {
     private readonly Tarea_2Context _context;
 
