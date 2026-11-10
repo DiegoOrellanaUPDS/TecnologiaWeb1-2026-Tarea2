@@ -16,7 +16,7 @@ namespace Tarea_2.Controllers
         _context = context;
     }
 
-    
+    // Feature3: gestion de productos y operaciones CRUD.
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ProductoMarcoArias>>> GetProductos()
     {
