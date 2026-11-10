@@ -33,4 +33,6 @@ public class Tarea_2Context : DbContext
     public DbSet<ProductoJuliethFlores> ProductosJuliethFlores { get; set; } = default!;
 
     public DbSet<ProductoAbrahamValeriano> ProductoAbrahamValeriano { get; set; } = default!;
+
+    // Cambio exclusivo de feature3 para conflicto final
 }
