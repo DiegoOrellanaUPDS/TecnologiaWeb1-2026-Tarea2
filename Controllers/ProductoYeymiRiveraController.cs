@@ -5,6 +5,8 @@ using Tarea_2.Dominio;
 
 namespace Tarea_2.Controllers;
 
+//Comentario de feature 3
+
 [ApiController]
 [Route("api/ProductoYeymi")]
 public class ProductoYeymiRiveraController : ControllerBase
@@ -30,7 +32,7 @@ public class ProductoYeymiRiveraController : ControllerBase
         _context.ProductoYeymi.Add(producto);
         await _context.SaveChangesAsync();
 
-        return Ok("Producto Creado Exitosamente"+new{ 
+        return Ok("Producto Creado "+new{ 
             Nombre=producto.Nombre,
             Precio=producto.Precio,
             Stock=producto.Stock

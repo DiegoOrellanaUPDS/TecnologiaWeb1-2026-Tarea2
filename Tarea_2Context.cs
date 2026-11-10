@@ -28,6 +28,7 @@ public class Tarea_2Context : DbContext
 
     public DbSet<ProductoJhefersonVelasco> ProductoJhefersonVelasco { get; set; } = default!;
 
+
     public DbSet<ProductoAdalidCallizaya> ProductosAdalidCallizaya { get; set; } = default!;
 
     public DbSet<ProductoJuliethFlores> ProductosJuliethFlores { get; set; } = default!;
@@ -35,5 +36,7 @@ public class Tarea_2Context : DbContext
     public DbSet<ProductoAbrahamValeriano> ProductoAbrahamValeriano { get; set; } = default!;
 
     public DbSet<ProductoJuniorCardozo> ProductosJuniorCardozo { get; set; } = default!;
+
+    public DbSet<Tarea_2.Models.ProductoEmanuelKilibarda> ProductoEmanuelKilibarda { get; set; } = default!;
 
 }
