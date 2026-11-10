@@ -14,7 +14,7 @@ namespace Tarea_2.Controllers
         {
             _context = context;
         }
-        // Practica feature2 JuniorCardozo: comentario inicial.
+        // Práctica feature2 y feature3: modificaciones de Junior Cardozo.
         // GET: api/ProductosJuniorCardozo
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductoJuniorCardozo>>> GetProductos()
@@ -23,7 +23,7 @@ namespace Tarea_2.Controllers
                 .AsNoTracking()
                 .ToListAsync();
         }
-
+        // Consulta individual de productos por identificador.
         // GET: api/ProductosJuniorCardozo/5
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductoJuniorCardozo>> GetProducto(int id)
