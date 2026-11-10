@@ -7,6 +7,8 @@ namespace Tarea_2.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+
+// Controlador responsable de administrar los registros de productos de DiegoHoyos.
 public class ProductoDiegoHoyosController : ControllerBase
 {
     private readonly Tarea_2Context _context;
