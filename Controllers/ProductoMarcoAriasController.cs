@@ -16,7 +16,7 @@ namespace Tarea_2.Controllers
         _context = context;
     }
 
-    
+    // Feature2: administración de productos. 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ProductoMarcoArias>>> GetProductos()
     {
