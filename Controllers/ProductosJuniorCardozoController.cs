@@ -14,7 +14,7 @@ namespace Tarea_2.Controllers
         {
             _context = context;
         }
-
+        // Practica feature3 JuniorCardozo: consulta general de productos.
         // GET: api/ProductosJuniorCardozo
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductoJuniorCardozo>>> GetProductos()
