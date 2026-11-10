@@ -37,7 +37,7 @@ namespace Tarea_2.Controllers
         return Ok(producto);
     }
 
-   
+   // Validaciones para las operaciones del controlador.
     [HttpPost]
     public async Task<ActionResult<ProductoMarcoArias>> CrearProducto(
         ProductoMarcoArias producto)
