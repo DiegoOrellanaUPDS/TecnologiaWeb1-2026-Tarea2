@@ -37,4 +37,6 @@ public class Tarea_2Context : DbContext
     public DbSet<Tarea_2.Models.ProductoEmanuelKilibarda> ProductoEmanuelKilibarda { get; set; } = default!;
 
    // Cambio temporal feature3 para provocar conflicto
+
+    // Cambio exclusivo de feature3 para conflicto final
 }
