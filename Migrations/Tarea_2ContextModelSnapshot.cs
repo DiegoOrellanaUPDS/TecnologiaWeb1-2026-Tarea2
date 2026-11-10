@@ -135,6 +135,30 @@ namespace Tarea_2.Migrations
                 b.ToTable("ProductoCarlosviza");
             });
 
+            modelBuilder.Entity("Tarea_2.Dominio.ProductoDiegoHoyos", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("numeric(10,2)");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductoDiegoHoyos");
+                });
+
             modelBuilder.Entity("Tarea_2.Dominio.ProductoGersonCari", b =>
             {
                 b.Property<int>("Id")
@@ -170,11 +194,11 @@ namespace Tarea_2.Migrations
                     .IsRequired()
                     .HasColumnType("text");
 
-                b.Property<decimal>("Precio")
-                    .HasColumnType("numeric");
-
-                b.Property<int>("Stock")
-                    .HasColumnType("integer");
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("numeric");
+                    
+                    b.Property<int>("Stock")
+                        .HasColumnType("integer");    
 
                 b.HasKey("Id");
 
@@ -298,6 +322,29 @@ namespace Tarea_2.Migrations
 
                 b.ToTable("ProductoMihaelCalvetty");
             });
+
+            modelBuilder.Entity("Tarea_2.Dominio.ProductoMihaelCalvetty", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("numeric");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductoMihaelCalvetty");
+                });
 
             modelBuilder.Entity("Tarea_2.Dominio.ProductoYasmin", b =>
             {
