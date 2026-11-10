@@ -23,7 +23,7 @@ namespace Tarea_2.Controllers
                 .AsNoTracking()
                 .ToListAsync();
         }
-
+        // Consulta individual de productos por identificador.
         // GET: api/ProductosJuniorCardozo/5
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductoJuniorCardozo>> GetProducto(int id)
