@@ -7,8 +7,7 @@ namespace Tarea_2.Controllers
     [ApiController]
     [Route("api/[controller]")]
 
-    //Práctica feature3: modificación alternativa de Max Caceres   
-    //Práctica feature2: modificación de Max Caceres
+   
     public class ProductoMaxCaceresController : ControllerBase
     {
         private readonly Tarea_2Context _context;
