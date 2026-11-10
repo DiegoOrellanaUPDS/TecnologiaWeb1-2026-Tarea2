@@ -24,6 +24,7 @@ public class ProductoDiegoHoyosController : ControllerBase
     {
         var productos = await _context.ProductoDiegoHoyos.ToListAsync();
 
+// Retornar la lista completa de productos registrados.
         return Ok(productos);
     }
 
