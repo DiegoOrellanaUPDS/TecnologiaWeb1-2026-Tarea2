@@ -9,6 +9,7 @@ namespace Tarea_2.Controllers;
 [ApiController]
 
 // Controlador encargado de gestionar el CRUD de productos de DiegoHoyos.
+// Controlador responsable de administrar los registros de productos de DiegoHoyos.
 public class ProductoDiegoHoyosController : ControllerBase
 {
     private readonly Tarea_2Context _context;
@@ -24,6 +25,7 @@ public class ProductoDiegoHoyosController : ControllerBase
     {
         var productos = await _context.ProductoDiegoHoyos.ToListAsync();
 
+// Retornar la lista completa de productos registrados.
         return Ok(productos);
     }
 
