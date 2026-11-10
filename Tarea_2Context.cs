@@ -33,4 +33,5 @@ public class Tarea_2Context : DbContext
     public DbSet<ProductoJuliethFlores> ProductosJuliethFlores { get; set; } = default!;
 
     public DbSet<ProductoAbrahamValeriano> ProductoAbrahamValeriano { get; set; } = default!;
+    // Cambio temporal feature2
 }
